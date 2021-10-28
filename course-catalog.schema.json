@@ -1,0 +1,9 @@
+{
+  "$id": "fhttps://kpsmithjr.github.io/ms_advisor_files/course-catalog.schema.json",
+  "title": "Course Catalog",
+  "description": "A catalog of all courses offered by the Computer Science department at UMSL",
+  "type": "array",
+	"minItems": 1,
+  "uniqueItems": true,
+	"items" : { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/course.schema.json" }
+}
