@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "student-plan",
+  "title": "Student Plan",
+  "description": "Contains a user's degree options, progress, and plan",
+  "type": "array",
+  "items": { "$ref": "#/$defs/semItem" },
+
+  "$defs": {
+    "semItem": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "year": { "type": "number" },
+        "term": { "type": "string" },
+        "position": { "type": "number" },
+        "maxCredHrs": { "type": "number" },
+        "courses": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/courseItem" }
+        }
+      }
+    },
+
+    "courseItem": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "dept": { "type": "string" },
+        "num": { "type": "number" },
+        "name": { "type": "string" },
+        "credHrs": { "type": "number" }
+      },
+      "required": [ "id", "dept", "num" ]
+    }
+  }
+}
