@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "options",
+  "$id": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/options.schema.json",
   "title": "Options",
   "description": "Preferred options for pursuing a degree at UMSL",
   "type": "object",
