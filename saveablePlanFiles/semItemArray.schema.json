@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "semItemArray",
+  "$id": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/semItemArray.schema.json",
   "title": "Semester Item Array",
   "description": "A collection of planned semesters",
   "type": "array",
   "minItems": 0,
   "uniqueItems": true,
-  "items": { "$ref": "./semItem.schema.json" }
+  "items": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/semItem.schema.json" }
 }
