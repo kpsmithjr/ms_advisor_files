@@ -6,5 +6,5 @@
   "type": "array",
   "minItems": 0,
   "uniqueItems": true,
-  "items": { "$ref": "./course.schema.json" }
+  "items": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course.schema.json" }
 }
