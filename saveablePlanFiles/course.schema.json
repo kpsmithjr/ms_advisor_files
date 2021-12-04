@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "file///home/ken/Research/ms_advisor_model/public/public/course.schema.json",
+  "$id": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course.schema.json",
   "title": "Course",
   "description": "A course offered at UMSL",
   "type": "object",
