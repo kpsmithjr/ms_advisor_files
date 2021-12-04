@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "student-plan",
+  "title": "Student Plan",
+  "description": "Contains a user's degree options, progress, and plan",
+  "type": "object",
+  "properties": {
+    "msOptions": { "$ref": "#/$defs/options" },
+    "waivers": { "$ref": "#/$defs/courseArray" },
+    "restrictedCourses": { "$ref": "#/$defs/courseArray" },
+    "plan": { "$ref": "#/$defs/semItemArray" }
+  },
+
+  "$defs": {
+    "options": {
+      "description": "Preferred options for pursuing a degree at UMSL",
+      "type": "object",
+      "properties": {
+        "track": {
+          "description": "Which degree track, if applicable",
+          "type": "string",
+          "enum": [
+            "Traditional",
+            "Professional",
+            "Graduate Certificate in Artificial Intelligence",
+            "Graduate Certificate in Mobile Apps and Computing",
+            "Graduate Certificate in Internet and Web",
+            "Graduate Certificate in Data Science",
+            "Graduate Certificate in Cybersecurity"
+          ]
+        },
+        "certificates": {
+          "description": "The unique indentifier within the department for the course",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "selected": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+
+
+
+    "courseArray": {
+      "description": "A course offered at UMSL",
+      "type": "array",
+      "items": {
+
+
+
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Unique course identifier",
+            "type": "string"
+          },
+          "dept": {
+            "description": "The department that offers the course",
+            "type": "string"
+          },
+          "num": {
+            "description": "The unique indentifier within the department for the course",
+            "type": "number",
+            "minimum": 0
+          },
+          "credHrs": {
+            "description": "Number of credit hours earned by completing the course",
+            "type": "number",
+            "minimum": 0
+          },
+          "name": {
+            "description": "Descriptive name of the course",
+            "type": "string"
+          }
+        },
+        "required": [ "dept", "num" ]
+
+      }
+    },
+
+
+
+    "semItemArray": {
+      "description": "A collection of planned semesters",
+      "type": "array",
+      "minItems": 0,
+      "uniqueItems": true,
+      "items": {
+
+
+        "description": "Contains identifying info for a semester and the courses planned for it",
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "year": { "type": "number" },
+          "term": { "type": "string" },
+          "position": { "type": "number" },
+          "maxCredHrs": { "type": "number" },
+          "courses": {
+            "description": "A course offered at UMSL",
+            "type": "array",
+            "items": {
+
+
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Unique course identifier",
+                  "type": "string"
+                },
+                "dept": {
+                  "description": "The department that offers the course",
+                  "type": "string"
+                },
+                "num": {
+                  "description": "The unique indentifier within the department for the course",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "credHrs": {
+                  "description": "Number of credit hours earned by completing the course",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "name": {
+                  "description": "Descriptive name of the course",
+                  "type": "string"
+                }
+              },
+              "required": [ "dept", "num" ]
+
+            }
+          }
+        }
+
+      }
+    }
+
+
+
+
+  }
+}
