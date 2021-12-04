@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "file///home/ken/Research/ms_advisor_model/public/course-catalog.schema.json",
+  "$id": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course-catalog.schema.json",
   "title": "Course Catalog",
   "description": "A catalog of all courses offered by the Computer Science department at UMSL",
   "type": "array",
