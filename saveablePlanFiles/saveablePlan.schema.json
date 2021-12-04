@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/",
+  "title": "Student Plan",
+  "description": "Contains a user's degree options, progress, and plan",
+  "type": "object",
+  "properties": {
+    "msOptions": { "$ref": "./options.schema.json" },
+    "waivers": { "$ref": "course-catalog.schema.json" },
+    "restrictedCourses": { "$ref": "course-catalog.schema.json" },
+    "plan": { "$ref": "semItem.schema.json" }
+  }
+}

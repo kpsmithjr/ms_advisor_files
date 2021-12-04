@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "options",
+  "title": "Options",
+  "description": "Preferred options for pursuing a degree at UMSL",
+  "type": "object",
+  "properties": {
+    "track": {
+      "description": "Which degree track, if applicable",
+      "type": "string",
+      "enum": [
+        "Traditional",
+        "Professional",
+        "Graduate Certificate in Artificial Intelligence",
+        "Graduate Certificate in Mobile Apps and Computing",
+        "Graduate Certificate in Internet and Web",
+        "Graduate Certificate in Data Science",
+        "Graduate Certificate in Cybersecurity"
+      ]
+    },
+    "certificates": {
+      "description": "The unique indentifier within the department for the course",
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": { "type": "string" },
+          "selected": {"type": "boolean"}
+        }
+      }
+    }
+  }
+}

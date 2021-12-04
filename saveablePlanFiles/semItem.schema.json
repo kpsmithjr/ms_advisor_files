@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "semItem",
+  "title": "Semester Item",
+  "description": "Contains identifying info for a semester and the courses planned for it",
+  "type": "object",
+
+  "properties": {
+    "id": { "type": "string" },
+    "year": { "type": "number" },
+    "term": { "type": "string" },
+    "position": { "type": "number" },
+    "maxCredHrs": { "type": "number" },
+    "courses": { "$ref": "./course.schema.json" }
+  }
+}

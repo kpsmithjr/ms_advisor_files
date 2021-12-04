@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "semItemArray",
+  "title": "Semester Item Array",
+  "description": "A collection of planned semesters",
+  "type": "array",
+  "minItems": 0,
+  "uniqueItems": true,
+  "items": { "$ref": "./semItem.schema.json" }
+}
