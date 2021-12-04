@@ -5,7 +5,7 @@
   "description": "Contains a user's degree options, progress, and plan",
   "type": "object",
   "properties": {
-    "msOptions": { "$ref": "./options.schema.json" },
+    "msOptions": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/options.schema.json" },
     "waivers": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course-catalog.schema.json" },
     "restrictedCourses": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course-catalog.schema.json" },
     "plan": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/semItemArray.schema.json" }
