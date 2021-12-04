@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "semItem",
+  "$id": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/semItem.schema.json",
   "title": "Semester Item",
   "description": "Contains identifying info for a semester and the courses planned for it",
   "type": "object",
@@ -11,6 +11,6 @@
     "term": { "type": "string" },
     "position": { "type": "number" },
     "maxCredHrs": { "type": "number" },
-    "courses": { "$ref": "./course.schema.json" }
+    "courses": { "$ref": "https://kpsmithjr.github.io/ms_advisor_files/saveablePlanFiles/course.schema.json" }
   }
 }
