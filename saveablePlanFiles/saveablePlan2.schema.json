@@ -68,14 +68,14 @@
             "type": "number",
             "minimum": 0
           },
+          "name": {
+            "description": "Descriptive name of the course",
+            "type": "string"
+          },
           "credHrs": {
             "description": "Number of credit hours earned by completing the course",
             "type": "number",
             "minimum": 0
-          },
-          "name": {
-            "description": "Descriptive name of the course",
-            "type": "string"
           }
         },
         "required": [ "dept", "num" ]
@@ -122,14 +122,14 @@
                   "type": "number",
                   "minimum": 0
                 },
+                "name": {
+                  "description": "Descriptive name of the course",
+                  "type": "string"
+                },
                 "credHrs": {
                   "description": "Number of credit hours earned by completing the course",
                   "type": "number",
                   "minimum": 0
-                },
-                "name": {
-                  "description": "Descriptive name of the course",
-                  "type": "string"
                 }
               },
               "required": [ "dept", "num" ]
