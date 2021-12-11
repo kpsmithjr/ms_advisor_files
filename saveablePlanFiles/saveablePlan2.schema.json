@@ -8,7 +8,8 @@
     "msOptions": { "$ref": "#/$defs/options" },
     "waivers": { "$ref": "#/$defs/courseArray" },
     "restrictedCourses": { "$ref": "#/$defs/courseArray" },
-    "plan": { "$ref": "#/$defs/semItemArray" }
+    "plan": { "$ref": "#/$defs/semItemArray" },
+    "transferHrs": { "type": "number" }
   },
 
   "$defs": {
