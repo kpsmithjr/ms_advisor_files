@@ -9,7 +9,8 @@
     "waivers": { "$ref": "#/$defs/courseArray" },
     "restrictedCourses": { "$ref": "#/$defs/courseArray" },
     "plan": { "$ref": "#/$defs/semItemArray" },
-    "transferHrs": { "type": "number" }
+    "transferHrs": { "type": "number" }.
+    "completed": { "$ref": "#/$defs/courseArray" },
   },
 
   "$defs": {
