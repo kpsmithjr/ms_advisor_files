@@ -41,7 +41,10 @@
               "selected": { "type": "boolean" }
             }
           }
-        }
+        },
+        "fullTime": { "type": "boolean" },
+        "eveningOnly": { "type": "boolean" },
+        "onlineOnly": { "type": "boolean" }
       }
     },
 
